@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="Campo">
+        <h1 id="Titulo">Cadastro de alunos</h1>
+        <p id="Subtitulo"> Complete suas informações abaixo</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="Grupo">
+            <div class="check">
+                <label for="name"><strong>Nome</strong></label>
+                <input type="text" name="Nome" id="Nome" required>
+            </div>
+
+            <div class="Campo">
+               <label for="Sobrenome"><strong>Sobrenome<strong></label>
+                <input type="text" name="Sobrenome" id="Soobrenome" required>
+            </div>
+        </fieldset>
+        <div class="Campo">
+           <label for="Email">Email</label>
+           <input type="Email" name="Email" id="Email"required>
+        </div>
+        <div class="Campo">
+            <label>De qual turma você é?</label>
+            <label>
+                <input type="radio" name=" Primeiro" value="A"> A
+            </label>
+            <label>
+                <input type="radio" name="Primeiro" value="B"> B
+            </label>
+            <label>
+                <input type="radio" name="Primeiro" value="C"> C
+            </label>
+        </div>
+        <div class="Campo">
+            <label>Sexo</label>
+            <select id="Sexo">
+                <option>Feminino</option>
+                <option>Masculino</option>
+                <option>Transgenero Masculino</option>
+                <option>Transgenero Feminino</option>
+                <option>Fluido</option>
+                <option>Outro</option>
+            </select>
+        </div>
+        <fieldset class="Grupo">
+            <div class="Campo">
+                <Label> Selecione qual matéria você tem</Label>
+                <input type="checkbox" id="Tecnologia" name="Tecnologia" value="Tecnologia"> Tecnologia
+                <input type="checkbox" id="Tecnologia" name="Tecnologia" value="Tecnologia"> Arte
+                <input type="checkbox" id="Tecnologia" name="Tecnologia" value="Tecnologia"> Inova
+            </div>
+        </fieldset>
+        <div class="Campo">
+            <br>
+            <label>Conte sobre suas experiencias nas aulas</label> 
+            <textarea row="6" style="width: 26mm" id="Experiência" name="Experiência"></textarea>
+        </div>
+        <Button class="Botão" type="submit">Concluído</Button>
+    </form>
+</body>
+</html>
