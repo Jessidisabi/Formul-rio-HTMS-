@@ -84,11 +84,7 @@ input, select, textarea, button{
         box-shadow:inset 2px 2px 2px  white;
         text-shadow: none;
     }
-
-    .botao, select{
-        turma: pointer;
-    }  
-    
+   
     #check {
         display: inline-block;
     }
